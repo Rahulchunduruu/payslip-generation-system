@@ -42,8 +42,11 @@ class PayslipGenerator:
 if __name__ == "__main__":
     generator = PayslipGenerator()
     
-    # generator.generate_single_payslip('sco-00001')
+    #generate single payslip
+    #generator.generate_single_payslip('sco-00001')
 
+    #generate department payslips
     generator.generate_department_payslips('finance')
     
+    #close connection
     generator.close()

@@ -54,7 +54,7 @@ class Connection:
                 "professional_tax": f"{200:,}",
                 "special_allowance": f"{int(row[14]):,}",
                 "income_tax": f"{int(row[17]):,}",
-                "conveyance": f"{int(row[14]):,}",
+                "conveyance": f"{int(row[15]):,}",
                 "other_deductions": f"{int(row[18]):,}",
                 "total_earnings": f"{int(row[19]):,}",
                 "total_deductions": f"{int(row[20]):,}",
@@ -89,7 +89,7 @@ class Connection:
                 "professional_tax": f"{200:,}",
                 "special_allowance": f"{int(row[14]):,}",
                 "income_tax": f"{int(row[17]):,}",
-                "conveyance": f"{int(row[14]):,}",
+                "conveyance": f"{int(row[15]):,}",
                 "other_deductions": f"{int(row[18]):,}",
                 "total_earnings": f"{int(row[19]):,}",
                 "total_deductions": f"{int(row[20]):,}",
@@ -115,10 +115,10 @@ if __name__ == "__main__":
     #connection.all_departement_billing()
 
     #fetch each person billing
-    connection.each_person_billing('sco-00001')
+    #connection.each_person_billing('sco-00001')
     
     #fetch each department billing
-    #connection.each_department_billing('it')
+    connection.each_department_billing('it')
     
     #close the connection
     connection.close_connection()
