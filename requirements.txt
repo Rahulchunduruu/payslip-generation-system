@@ -1,0 +1,5 @@
+pyodbc
+python-dotenv
+Pillow
+html2image
+num2words
