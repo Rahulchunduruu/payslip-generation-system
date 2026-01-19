@@ -165,29 +165,6 @@ HTML template with placeholders:
 - `{basic_salary}`, `{hra}`, `{net_pay}`
 - `{amount_in_words}`, etc.
 
-## Classes & Methods
-
-### PayslipGenerator Class
-
-```python
-class PayslipGenerator:
-    def __init__(self)                              # Initialize DB connection
-    def generate_single_payslip(person_id)          # Generate for one employee
-    def generate_department_payslips(department)    # Generate for department
-    def _create_payslip(data)                       # Internal: Create HTML & image
-    def close()                                     # Close DB connection
-```
-
-### Connection Class (main.py)
-
-```python
-class Connection:
-    def connect_to_db()                             # Connect to SQL Server
-    def each_person_billing(person_id)              # Fetch single employee data
-    def each_department_billing(department)         # Fetch department data
-    def number_to_words(amount)                     # Convert amount to words
-    def close_connection()                          # Close connection
-```
 
 ## Troubleshooting
 
@@ -213,18 +190,4 @@ class Connection:
    - Ensure all CSS curly braces are doubled `{{}}`
    - Check all placeholders match data dictionary keys
 
-## Future Enhancements
 
-- [ ] PDF output support
-- [ ] Email payslips directly to employees
-- [ ] Web interface for payslip generation
-- [ ] Multi-month payslip generation
-- [ ] Custom template selection
-
-## License
-
-This project is for internal use.
-
-## Author
-
-SCOMART Technologies Pvt Ltd
